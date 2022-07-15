@@ -2,23 +2,14 @@
 pragma solidity ^0.8.2;
 
 contract SimpleStorage {
-  uint256 storedData;
+  uint256 favoriteNumber;
 	
-  function get() public view returns (uint) {
-    return storedData;
-  }
+  function Store(uint256 _favoriteNumber)public{
+    favoriteNumber = _favoriteNumber;
+  } 
 
-  function set(uint x) public {
-    storedData = x;
+  function retrieve()public view returns(uint256){
+    return favoriteNumber;
   }
-
-  function double() public {
-    storedData *= 2;
-  }
-}
-
-contract MathTest {
-	function multiply(uint a, uint b) public pure returns (uint) {
-    return a*b;
-  }
+  
 }
