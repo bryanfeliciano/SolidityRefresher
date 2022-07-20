@@ -15,5 +15,10 @@ contract SimpleStorage {
   funtion print()public view returns(string){
     return "This is a string";
   }
+
+  // (=>)  = mapping in sol
+  // function mappingExample () {
+  //   mapping (bool => uint256);
+  // }
   
 }
